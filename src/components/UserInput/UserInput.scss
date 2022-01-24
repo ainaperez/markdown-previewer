@@ -1,5 +1,10 @@
 @import "../../variables";
 
+h1 {
+  font-size: 7vw;
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,36 +13,27 @@
   text-align: left;
 }
 
-@media (min-width: 800px) {
-  .container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .item {
-    max-width: 45vw;
-  }
-}
-
 .item {
   flex: 1 1 0px;
   word-wrap: break-word;
 }
 
 .textarea {
+  display: block;
+  max-width: 90vw;
   padding: 10px;
-  border: 2px solid $strong-pink;
+  margin: auto;
   background-color: $soft-yellow;
+  border: 2px solid $strong-pink;
   border-radius: 5px;
 }
 
 .editor {
+  width: 90vw;
   min-height: 20vh;
-  width: 100%;
 }
 
 /* preview elements styles */
-
 .preview {
   blockquote {
     text-align: center;
@@ -45,22 +41,22 @@
     border-left: 3px solid $strong-pink;
   }
 
+  code {
+    font-size: .875rem;
+    font-weight: bold;
+    background: $soft-pink;
+  }
+
   > p > code {
     padding: 3px;
   }
 
-  code {
-    background: $soft-pink;
-    font-size: 0.875rem;
-    font-weight: bold;
-  }
-
   pre {
     display: block;
-    overflow: auto;
-    background: $soft-pink;
     padding: 5px;
+    overflow: auto;
     line-height: 1.2;
+    background: $soft-pink;
   }
 
   h1 {
@@ -77,14 +73,33 @@
 
   td,
   th {
-    border: 2px solid $strong-pink;
-    padding-left: 5px;
     padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid $strong-pink;
   }
 
   img {
     display: block;
     max-width: 90%;
     margin: 2rem auto;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3vw;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .item {
+    max-width: 45vw;
+  }
+
+  .textarea {
+    width: 42.5vw;
   }
 }

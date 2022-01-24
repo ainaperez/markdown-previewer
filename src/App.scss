@@ -5,13 +5,13 @@
 }
 
 .App-header {
-  background-color: $strong-pink;
-  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: $strong-pink;
 }
 
 .App-main {
