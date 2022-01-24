@@ -1,0 +1,19 @@
+@import "variables";
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: $strong-pink;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-main {
+  background-color: #faebf3;
+}
